@@ -1,0 +1,21 @@
+Subject: AutoReply: {$Ticket->Subject}
+Content-Type: text/html
+
+<p>Greetings,</p>
+
+<p>This message has been automatically generated in response to the
+creation of a trouble ticket regarding <b>{$Ticket->Subject()}</b>,
+a summary of which appears below.</p>
+
+<p>There is no need to reply to this message right now.  Your ticket has been
+assigned an ID of <b>{$Ticket->SubjectTag}</b>.</p>
+
+<p>Please include the string <b>{$Ticket->SubjectTag}</b>
+in the subject line of all future correspondence about this issue. To do so,
+you may reply to this message.</p>
+
+<p>Thank you,<br/>
+{$Ticket->QueueObj->CorrespondAddress()}</p>
+
+<hr/>
+{$Transaction->Content(Type => 'text/html')}
