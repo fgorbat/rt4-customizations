@@ -1,5 +1,19 @@
 ### GLOBAL  FUNCTIONS ###
 
+## Printouts
+SUCCESS_COLOR="/bin/echo -en [ \\033[1;32m"
+export  SUCCESS_COLOR
+
+FAILURE_COLOR="/bin/echo -en [ \\033[1;31m"
+export FAILURE_COLOR
+
+WARNING_COLOR="/bin/echo -en [ \\033[1;33m"
+export WARNING_COLOR
+
+NORMAL_COLOR="/bin/echo -en \\033[0;39m ]"
+export  NORMAL_COLOR
+
+
 #-#-# Print to the log file only
 PRINT_LOG() 
 {
