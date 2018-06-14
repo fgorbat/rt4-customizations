@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        sh 'echo "hello world!"'
-        echo 'my message'
+        sh 'echo "hi1"'
+        echo 'hi2'
         readFile '/var/log/dpkg.log'
       }
     }
