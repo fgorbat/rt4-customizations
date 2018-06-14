@@ -13,5 +13,15 @@ pipeline {
         sleep 5
       }
     }
+    stage('Checkout') {
+      steps {
+        pwd(tmp: true)
+      }
+    }
+    stage('End') {
+      steps {
+        cleanWs(cleanWhenSuccess: true)
+      }
+    }
   }
 }
