@@ -5,7 +5,12 @@ pipeline {
       steps {
         sh 'echo "hello world!"'
         echo 'my message'
-        readFile 'iii'
+        readFile '/var/log/dpkg.log'
+      }
+    }
+    stage('stage2') {
+      steps {
+        sleep 5
       }
     }
   }
